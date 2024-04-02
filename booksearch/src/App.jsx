@@ -16,7 +16,7 @@ function App() {
     try {
       const response = await fetch(`https://openlibrary.org/search.json?title=${query}`);
       const data = await response.json();
-      setContent(data);
+      setContent(data.docs);
 
     } catch {
       console.error("En feil har oppstått.")
