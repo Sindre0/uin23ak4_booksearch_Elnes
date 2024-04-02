@@ -1,6 +1,9 @@
 import './App.css'
 import Layout from './components/Layout'
 import { useEffect, useState } from 'react';
+import SearchResult from './components/SearchResult'
+import { Route, Routes } from 'react-router-dom'
+
 
 
 
@@ -29,7 +32,9 @@ function App() {
   return (
     <>
      <Layout>
-      
+      <Routes>
+        <Route index element={<SearchResult content={content}/>}/>
+      </Routes>
      </Layout>
     </>
   )
