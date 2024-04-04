@@ -31,7 +31,7 @@ function App() {
 
   return (
     <>
-     <Layout>
+     <Layout query={query} setQuery={setQuery} content={content}>
       <Routes>
         <Route index element={<SearchResult content={content}/>}/>
       </Routes>

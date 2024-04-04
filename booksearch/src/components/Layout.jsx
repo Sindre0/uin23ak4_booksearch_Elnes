@@ -1,6 +1,6 @@
 import SearchField from "./SearchField";
 
-export default function Layout({children}){
+export default function Layout({children, setQuery, query, content}){
 
     return(
         <>
@@ -11,10 +11,11 @@ export default function Layout({children}){
         </header>
         <main>
             <section>
-                <SearchField></SearchField>
+                <SearchField setQuery={setQuery} content={content} query={query}></SearchField>
             </section>
             {children}
         </main>
+    
         </>
     )
 }
