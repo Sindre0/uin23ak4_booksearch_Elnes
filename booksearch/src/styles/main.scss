@@ -1,0 +1,46 @@
+@import 'bookCard';
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+
+body {
+    display: flex;
+    flex-direction: column;
+    
+    .searchField{
+        form{
+            min-width: 265px;
+            margin-bottom: 1rem;
+
+            input[type=text] {
+                background-color: lightgray;
+                padding: 1rem;
+                border: none;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                
+        
+              }
+            input[type=submit] {
+                background-color: rgb(48, 48, 48);
+                color: white;
+                padding: 1rem;
+                border: none;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+        
+            }
+
+        }
+    }
+    
+}
+
+.bookdisplay{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}

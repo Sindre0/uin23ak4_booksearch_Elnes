@@ -1,0 +1,46 @@
+.contentcard {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: lightblue;
+    border-radius: 1rem;
+    padding: 1rem;
+    align-items: center;
+    margin: 1rem;
+    width: 28%;
+    
+
+    p{
+        font-size: 20px;
+        margin: 0.5rem;
+    }
+    
+    a{
+        margin: 1rem;
+        background-color: darkgrey;
+        color: black;
+        padding: 0.5rem;
+        border-radius: 5px;
+    }
+
+    a:hover{
+        background-color: black;
+        color: white;
+    }
+
+    img{
+        width: 80%;
+    }
+
+    @media only screen and (max-width:760px){
+        width: 100%;
+
+        h3{
+            font-size: 16px;
+        }
+
+        p{
+            font-size: 14px;
+        }
+    }
+}
